@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alef development_test</title>
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="visually-hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clipPath id="clip1"><path fill="#fff" transform="rotate(90 7.5 7.5)" d="M0 0h15v15H0z"></path></clipPath><clipPath id="clip0"><path fill="#fff" transform="rotate(-90 9 9)" d="M0 0h18v18H0z"></path></clipPath></defs><symbol id="icon-arrow-down"><g clip-path="url(#clip0)"><path d="M8.085 11.667l6.675-6.675a.815.815 0 00.24-.58.815.815 0 00-.24-.58l-.491-.492a.822.822 0 00-1.16 0L7.502 8.945l-5.61-5.612a.815.815 0 00-.58-.24.816.816 0 00-.581.24l-.491.492a.815.815 0 00-.24.58c0 .22.085.426.24.58l6.68 6.682c.156.155.363.24.583.24.22 0 .427-.085.582-.24z" fill="#000"></path></g></symbol><symbol id="icon-arrow-up"><g clip-path="url(#clip0)"><path d="M8.298 4l-8.01 8.01a.978.978 0 00-.288.696c0 .264.102.51.288.696l.59.59a.986.986 0 001.392 0l6.726-6.726L15.73 14a.978.978 0 00.696.287.979.979 0 00.697-.288l.59-.59a.978.978 0 00.287-.696.977.977 0 00-.288-.696L9.695 4a.979.979 0 00-.698-.287.979.979 0 00-.7.287z" fill="#fff"></path></g></symbol><symbol id="icon-checkbox-checked" viewBox="0 0 18 18">
+<rect width="18" height="18" rx="3" fill="#6EBBD3"></rect>
+<path d="M8.5266 12.388C8.07322 12.8414 7.33756 12.8414 6.8844 12.388L4.34004 9.84358C3.88665 9.3904 3.88665 8.65474 4.34004 8.20156C4.7932 7.74817 5.52885 7.74817 5.98223 8.20156L7.49817 9.71732C7.61261 9.83154 7.79839 9.83154 7.91304 9.71732L12.0178 5.6125C12.4709 5.15911 13.2066 5.15911 13.66 5.6125C13.8777 5.83023 14 6.12563 14 6.43351C14 6.74139 13.8777 7.03679 13.66 7.25452L8.5266 12.388Z" fill="white"></path>
+</symbol><symbol id="icon-checkbox" viewBox="0 0 18 18">
+<rect width="18" height="18" rx="3" fill="#6EBBD3"></rect>
+</symbol><symbol id="icon-header-logo"><path d="M63.056 28.881l-8.844.014-26.41 24.897H10.034V36.46l24.2-22.61-16.242.05L0 30.663V64.15h34.028l29.014-27.58.014-7.688z" fill="#fff"></path><path d="M43.972 13.849L14.96 41.432l-.014 7.686 8.843-.013L50.2 24.208h17.766V41.54l-24.2 22.611 16.242-.05L78 47.338v-33.49H43.972z" fill="#fff"></path></symbol><symbol id="icon-like-checked"><path d="M33.781 2.695c-2.496 0-4.784.791-6.802 2.351-1.933 1.496-3.221 3.4-3.979 4.786-.758-1.385-2.046-3.29-3.98-4.786-2.017-1.56-4.305-2.35-6.801-2.35C5.253 2.695 0 8.392 0 15.947 0 24.11 6.553 29.695 16.475 38.15a571.533 571.533 0 015.579 4.798 1.435 1.435 0 001.892 0c1.985-1.735 3.895-3.363 5.58-4.8C39.447 29.697 46 24.112 46 15.95c0-7.556-5.253-13.254-12.219-13.254z" fill="#fff"></path></symbol><symbol id="icon-like"><path d="M33.781.695c-2.496 0-4.784.791-6.802 2.351-1.933 1.496-3.221 3.4-3.979 4.786-.758-1.385-2.046-3.29-3.98-4.786-2.017-1.56-4.305-2.35-6.801-2.35C5.253.695 0 6.392 0 13.947 0 22.11 6.553 27.695 16.475 36.15a571.533 571.533 0 015.579 4.798 1.435 1.435 0 001.892 0c1.985-1.735 3.895-3.363 5.58-4.8C39.447 27.697 46 22.112 46 13.95 46 6.392 40.747.694 33.781.694z" fill="#fff" fill-opacity=".5"></path></symbol></svg>
+  </div>
+  <div class="intro">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a class="nav__link">
+            <svg width="78" height="78" viewBox="0 0 78 78">
+              <use href="#icon-header-logo" fill="none"></use>
+            </svg>
+          </a>
+          <button class="nav__button nav__button--closed">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="nav__list main-menu main-menu--closed">
+          <li class="main-menu__item">
+            <a href="#">Main</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Gallery</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">News</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+        <div class="nav__telephone nav__telephone--closed">
+          <a href="tel:+544349000000">+544 3490 00000</a>
+          <span>Звони скорее!</span>
+        </div>
+      </nav>
+    </header>
+    <div class="search-section">
+      <h1 class="visually-hidden">Поиск и продажа котов на любой вкус</h1>
+      <h2 class="search-section__title">Найдено 349 котов</h2>
+    </div>
+  </div>
+  <main>
+    <section class="main-section" id="main">
+      <h2 class="visually-hidden">Список найденных котов</h2>
+      <div class="sort-block">
+        <span class="sort-block__text">Сортировать по:</span>
+        <button type="button" class="sort-block__button sort-block__button--price">Цене
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <use href="#icon-arrow-down"></use>
+          </svg>
+        </button>
+        <button type="button" class="sort-block__button sort-block__button--age">Возрасту
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <use href="#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="cats-list"></ul>
+      <button class="cats-list__button">Показать еще 20</button>
+      <button type="button" class="main-section__scroll-button" aria-label="Прокрутить наверх">
+      </button>
+    </section>
+    <div class="added-modal added-modal--hidden">
+      <p class="added-modal__message">Котейка добавлен в избранное</p>
+      <button type="button" class="added-modal__button">ОК</button>
+    </div>
+    <section class="submit-section">
+      <div class="submit-section__wrapper">
+        <div class="submit-section__text-wrapper">
+          <h2 class="submit-section__title">Успей купить!</h2>
+          <p class="submit-section__content">Подпишись и успей словить все акции</p>
+        </div>
+        <div class="submit-section__form submit-form">
+          <form action="#" method="POST">
+            <label for="email" class="visually-hidden">Введите ваш e-mail</label>
+            <input type="email" name="email" id="email" placeholder="Email" required="">
+            <button type="submit" aria-label="Подписаться">Подписаться</button>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" class="submit-form__label">Подписаться на новости</label>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
