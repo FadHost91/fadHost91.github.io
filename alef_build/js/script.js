@@ -22,7 +22,7 @@ let mainMenu = document.querySelector(".main-menu");
 let form = document.querySelector("form");
 let emailInput = document.querySelector("#email");
 let agreementCheckbox = document.querySelector("#agreement");
-console.log(agreementCheckbox)
+
 // Отрисовывает актуальное сортированное количество котов
 
 function render() {
