@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Лаборатория Интернет</title>
+  <link rel="preload" href="fonts/GraphikLCG-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/GraphikLCG-Semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="visually-hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-left"><path d="M14.839 2.276A1.334 1.334 0 0012.954.391L2.058 11.287a6.667 6.667 0 000 9.426L12.954 31.61a1.333 1.333 0 001.885-1.885L3.943 18.828a4 4 0 010-5.656L14.839 2.276z"></path></symbol><symbol id="icon-arrow-right"><path d="M1.39 29.724a1.333 1.333 0 101.886 1.885l10.896-10.896a6.673 6.673 0 000-9.426L3.276.39A1.333 1.333 0 001.39 2.276l10.896 10.896a4 4 0 010 5.656L1.39 29.724z"></path></symbol><symbol id="icon-cursor-clock"><path d="M69.808 40.71c-7.564-11.582-6.76-23.454-10.406-29.036-3.646-5.582-14.512-15.206-40.186 1.564s-19.144 35-15.132 41.138C22.86 83.12 83.206 61.222 69.808 40.71z" fill="#ECEFF2"></path><path d="M37.5 22.892c0 .46-.302.856-.72.992l-9.714 3.182-3.182 9.714c-.136.418-.532.72-.992.72-.448 0-.824-.282-.97-.668L13.574 14.92a.872.872 0 01-.074-.376c0-.574.47-1.044 1.044-1.044.136 0 .26.02.376.074l21.914 8.348c.384.144.666.52.666.97z" fill="#F3F3F1"></path><path d="M18.074 14.92c-.022-.048-.02-.106-.032-.156l-3.122-1.19a.872.872 0 00-.376-.074c-.574 0-1.044.47-1.044 1.044a.9.9 0 00.072.376l8.348 21.914c.146.386.522.668.97.668.46 0 .856-.302.992-.72l1.164-3.554-6.972-18.308z" fill="#E1E6EA"></path><path d="M45 58.5c7.456 0 13.5-6.044 13.5-13.5S52.456 31.5 45 31.5 31.5 37.544 31.5 45 37.544 58.5 45 58.5z" fill="#2A6CEA"></path><path d="M36 45c0-6.688 4.868-12.224 11.25-13.298A13.466 13.466 0 0045 31.5c-7.456 0-13.5 6.044-13.5 13.5S37.544 58.5 45 58.5c.768 0 1.516-.08 2.25-.202C40.868 57.224 36 51.688 36 45z" fill="#191C1F" fill-opacity=".1"></path><path d="M60.257 25.363l1.414-1.414 2.829 2.829-1.415 1.414-2.828-2.829zm-8.128-8.133l1.414-1.414 2.828 2.828-1.414 1.414-2.828-2.828zm8.484 1.416l2.828-2.828 1.414 1.414-2.828 2.828-1.414-1.414zm-8.13 8.129l2.829-2.828 1.414 1.414-2.829 2.828-1.414-1.414z" fill="#C2C8CD"></path><path d="M49.55 51.66l-5.5-4.5A1.49 1.49 0 0143.5 46v-8.5h3v7.79l4.95 4.05-1.9 2.32z" fill="#fff"></path><path d="M22.89 39a2.553 2.553 0 01-2.374-1.636l-8.346-21.91c-.104-.23-.17-.56-.17-.912A2.544 2.544 0 0114.542 12c.352 0 .682.066.982.2l21.84 8.318a2.553 2.553 0 011.634 2.374 2.54 2.54 0 01-1.754 2.418l-8.992 2.946-2.946 8.992A2.537 2.537 0 0122.89 39zm-7.556-23.664l7.526 19.748 2.78-8.486a1.5 1.5 0 01.958-.958l8.486-2.78-19.75-7.524zm-.948-.362c.006.002.014.006.024.008l-.024-.008zm.56-.66l.026.068-.026-.068z" fill="#191C1F"></path></symbol><symbol id="icon-logo"><circle cx="25" cy="12" r="12" fill="#ECEFF2"></circle><circle cx="12" cy="12" r="12" fill="#2A6CEA"></circle><path d="M51.22 18.2c-2.253 0-3.38-1.1-3.38-3.3V9.6H46.5V7.54h1.34V5.28h2.88v2.26h2.2V9.6h-2.2v5.04c0 .827.387 1.24 1.16 1.24.427 0 .793-.067 1.1-.2v2.24c-.533.187-1.12.28-1.76.28zm8.773.02c-1.626 0-2.926-.473-3.9-1.42-1.04-.96-1.56-2.26-1.56-3.9v-.16c0-1.627.52-2.947 1.56-3.96 1.014-.987 2.287-1.48 3.82-1.48 1.454 0 2.64.42 3.56 1.26 1.027.933 1.54 2.287 1.54 4.06v.8h-7.54c.04.88.28 1.56.72 2.04.454.467 1.08.7 1.88.7 1.254 0 1.98-.487 2.18-1.46h2.74c-.173 1.133-.693 2.007-1.56 2.62-.853.6-2 .9-3.44.9zm2.2-6.58c-.093-1.56-.853-2.34-2.28-2.34-.653 0-1.193.207-1.62.62-.413.4-.673.973-.78 1.72h4.68zm8.85 6.58c-1.413 0-2.513-.3-3.3-.9-.786-.6-1.206-1.467-1.26-2.6h2.7c.08.507.254.88.52 1.12.267.24.707.36 1.32.36 1.094 0 1.64-.38 1.64-1.14 0-.36-.16-.627-.48-.8-.32-.187-.866-.333-1.64-.44-1.413-.227-2.4-.567-2.96-1.02-.6-.467-.9-1.213-.9-2.24 0-1.027.427-1.847 1.28-2.46.734-.533 1.687-.8 2.86-.8 1.214 0 2.194.24 2.94.72.787.533 1.247 1.373 1.38 2.52h-2.66c-.08-.44-.246-.76-.5-.96-.253-.2-.633-.3-1.14-.3-.466 0-.833.1-1.1.3-.253.2-.38.46-.38.78 0 .333.14.58.42.74.294.16.827.293 1.6.4 1.374.187 2.38.5 3.02.94.694.52 1.04 1.3 1.04 2.34 0 1.12-.386 1.973-1.16 2.56-.76.587-1.84.88-3.24.88zm10.294-.02c-2.253 0-3.38-1.1-3.38-3.3V9.6h-1.34V7.54h1.34V5.28h2.88v2.26h2.2V9.6h-2.2v5.04c0 .827.387 1.24 1.16 1.24.427 0 .793-.067 1.1-.2v2.24c-.533.187-1.12.28-1.76.28zm4.214-14.5h3.24v11.76h5.82V18h-9.06V3.7zm14.005 14.52c-1.013 0-1.833-.247-2.46-.74-.693-.547-1.04-1.34-1.04-2.38 0-1.16.507-2.027 1.52-2.6.907-.507 2.213-.76 3.92-.76h1.18v-.42c0-.667-.127-1.153-.38-1.46-.24-.307-.68-.46-1.32-.46-1.027 0-1.62.493-1.78 1.48h-2.74c.08-1.173.567-2.08 1.46-2.72.813-.573 1.893-.86 3.24-.86 1.347 0 2.4.293 3.16.88.813.64 1.22 1.64 1.22 3V18h-2.82v-1.26c-.707.987-1.76 1.48-3.16 1.48zm.86-2.02c.653 0 1.193-.167 1.62-.5.427-.333.64-.787.64-1.36v-.88h-1.12c-.88 0-1.547.113-2 .34-.44.227-.66.607-.66 1.14 0 .84.507 1.26 1.52 1.26zm14.083 2.02c-.786 0-1.473-.167-2.06-.5a3.27 3.27 0 01-1.28-1.38V18h-2.9V2.8h2.9v6.38c.307-.547.754-.993 1.34-1.34.6-.36 1.267-.54 2-.54 1.32 0 2.4.46 3.24 1.38.88.96 1.32 2.287 1.32 3.98v.16c0 1.68-.433 3.007-1.3 3.98-.826.947-1.913 1.42-3.26 1.42zm-.86-2.26c.8 0 1.414-.26 1.84-.78.427-.533.64-1.313.64-2.34v-.16c0-1.04-.226-1.827-.68-2.36-.453-.533-1.06-.8-1.82-.8-.786 0-1.413.273-1.88.82-.453.533-.68 1.313-.68 2.34v.16c0 1.027.227 1.807.68 2.34.454.52 1.087.78 1.9.78z"></path></symbol><symbol id="icon-moneybags"><path d="M26.821 70.094c12.596-5.718 24.21-3.118 30.28-5.872 6.07-2.756 17.234-12.032 4.56-39.956C48.987-3.658 29.98.024 23.301 3.056c-31.264 14.188-18.79 77.162 3.52 67.038z" fill="#ECEFF2"></path><path d="M27.294 19.7h-.18l4.686-3.748c1.02-.812.44-2.452-.854-2.452H18.132c-1.296 0-1.874 1.64-.854 2.452l4.684 3.748h-.18c-4.768 2.796-8.612 10.76-8.612 16.534 0 4.134 2.066 8.266 6.888 8.266h9.3c4.822 0 6.888-4.134 6.888-8.266.004-5.774-4.184-13.738-8.952-16.534z" fill="#F3F3F1"></path><path d="M17.671 36.234c0-5.772 3.844-13.736 8.612-16.534h.18l-4.684-3.748c-1.02-.812-.44-2.452.854-2.452h-4.5c-1.296 0-1.874 1.64-.854 2.452l4.684 3.748h-.18c-4.768 2.796-8.612 10.76-8.612 16.534 0 4.134 2.066 8.266 6.888 8.266h4.5c-4.822 0-6.888-4.134-6.888-8.266z" fill="#E1E6EA"></path><path d="M49.716 19.7h-.18l4.684-3.748c1.02-.812.44-2.452-.854-2.452H40.552c-1.296 0-1.874 1.64-.854 2.452l4.684 3.748h-.18c-4.768 2.796-8.612 10.76-8.612 16.534 0 4.134 2.066 8.266 6.888 8.266h9.3c4.822 0 6.888-4.134 6.888-8.266.006-5.774-4.182-13.738-8.95-16.534z" fill="#F3F3F1"></path><path d="M40.094 36.234c0-5.772 3.844-13.736 8.612-16.534h.18L44.2 15.952c-1.02-.812-.44-2.452.854-2.452h-4.5c-1.296 0-1.874 1.64-.854 2.452l4.684 3.748h-.18c-4.768 2.796-8.612 10.76-8.612 16.534 0 4.134 2.066 8.266 6.888 8.266h4.5c-4.818 0-6.886-4.134-6.886-8.266z" fill="#E1E6EA"></path><path d="M38.834 33.7h-.18l4.684-3.748c1.02-.812.44-2.452-.854-2.452H29.67c-1.296 0-1.874 1.64-.854 2.452L33.5 33.7h-.18c-4.768 2.796-8.612 10.76-8.612 16.534 0 4.134 2.066 8.266 6.888 8.266h9.3c4.822 0 6.888-4.134 6.888-8.266.004-5.774-4.184-13.738-8.95-16.534z" fill="#2A6CEA"></path><path d="M35.06 52.4c-.396 0-.78-.158-1.06-.44l-4-4 2.122-2.122 2.778 2.778L39.86 42l2.398 1.8-6 8c-.26.348-.658.566-1.094.596-.034.004-.068.004-.104.004z" fill="#fff"></path><path d="M29.212 50.234c0-5.772 3.844-13.736 8.612-16.534h.18l-4.684-3.748c-1.02-.812-.44-2.452.854-2.452h-4.5c-1.296 0-1.874 1.64-.854 2.452l4.684 3.748h-.18c-4.768 2.796-8.612 10.76-8.612 16.534 0 4.134 2.066 8.266 6.888 8.266h4.5c-4.822 0-6.888-4.134-6.888-8.266z" fill="#191C1F" fill-opacity=".1"></path><path d="M59.932 54.82l2.829-2.83 1.414 1.415-2.828 2.828-1.415-1.414zm-8.13 8.129l2.828-2.829 1.414 1.415-2.828 2.828-1.414-1.414zm-.001-9.899l1.414-1.414 2.829 2.829-1.414 1.414-2.829-2.828zm8.129 8.131l1.415-1.414 2.828 2.828-1.414 1.415-2.828-2.829z" fill="#C2C8CD"></path><path d="M28.38 20.872l-1.873-2.344L30.919 15H18.817l4.412 3.528-1.874 2.344-4.684-3.748a2.842 2.842 0 01-.92-3.2A2.84 2.84 0 0118.46 12h12.814c1.238 0 2.3.756 2.71 1.926a2.846 2.846 0 01-.92 3.2l-4.684 3.746z" fill="#191C1F"></path><path d="M17.634 18.2H32.1v3H17.634v-3z" fill="#191C1F"></path><path d="M20.39 46C14.594 46 12 41.094 12 36.232c0-5.836 3.84-14.594 9.352-17.826l1.518 2.586C18.75 23.41 15 30.674 15 36.232c0 1.13.26 6.768 5.39 6.768v3zm30.256-25.128l-1.874-2.344L53.184 15H41.082l4.412 3.528-1.874 2.344-4.684-3.746a2.85 2.85 0 01-.92-3.202A2.842 2.842 0 0140.726 12H53.54c1.238 0 2.3.756 2.71 1.926a2.846 2.846 0 01-.92 3.2l-4.684 3.746z" fill="#191C1F"></path><path d="M39.9 18.2h14.466v3H39.9v-3z" fill="#191C1F"></path><path d="M51.612 46v-3C56.74 43 57 37.364 57 36.232c0-5.558-3.75-12.822-7.87-15.24l1.518-2.586C56.158 21.638 60 30.396 60 36.232 60 41.094 57.406 46 51.612 46z" fill="#191C1F"></path></symbol><symbol id="icon-nav-arrow"><path d="M.4 12.293a1 1 0 001.415 1.414L6.4 9.12a3 3 0 000-4.242L1.811.293a1 1 0 00-1.41 1.414l4.585 4.586a1 1 0 010 1.414L.4 12.293z" fill="#83898F"></path></symbol><symbol id="icon-secure"><path d="M8.334 55.246c0-13.834-7.166-23.334-7.166-30S5 4.58 35.666 4.58c30.666 0 35.166 18.834 35.166 26.166.002 34.334-62.498 49-62.498 24.5z" fill="#ECEFF2"></path><path d="M53.25 16.5h2v4h-2v-4zm4.5 6h4v2h-4v-2z" fill="#C2C8CD"></path><path d="M42.5 48.64V17.5c0-2.21-1.79-4-4-4h-21c-2.21 0-4 1.79-4 4v31.14c0 2.21 1.79 4 4 4h21c2.21 0 4-1.79 4-4z" fill="#F3F3F1"></path><path d="M48 58.5s10.5-4.464 10.5-13.392v-8.036L48 33.5l-10.5 3.572v8.036C37.5 54.036 48 58.5 48 58.5z" fill="#2A6CEA"></path><path d="M18 48.64V17.5c0-2.21 1.79-4 4-4h-4.5c-2.21 0-4 1.79-4 4v31.14c0 2.21 1.79 4 4 4H22c-2.21 0-4-1.79-4-4z" fill="#E1E6EA"></path><path d="M42 45.108v-8.036l8.25-2.806L48 33.5l-10.5 3.572v8.036C37.5 54.036 48 58.5 48 58.5s.942-.406 2.25-1.198C47.166 55.434 42 51.376 42 45.108z" fill="#191C1F" fill-opacity=".1"></path><path d="M30.5 54h-13a5.505 5.505 0 01-5.5-5.5v-31c0-3.034 2.466-5.5 5.5-5.5h21c3.034 0 5.5 2.466 5.5 5.5v11h-3v-11c0-1.378-1.122-2.5-2.5-2.5h-21a2.503 2.503 0 00-2.5 2.5v31c0 1.378 1.122 2.5 2.5 2.5h13v3z" fill="#191C1F"></path><path d="M20.56 37.56l-2.12-2.12 5-5a1.496 1.496 0 011.804-.242l2.546 1.456 5.692-5.254 2.036 2.206-6.5 6a1.502 1.502 0 01-1.762.2l-2.506-1.432-4.19 4.186z" fill="#191C1F"></path><path d="M36 34h-3v-5h-5v-3h6.5a1.5 1.5 0 011.5 1.5V34z" fill="#191C1F"></path><path d="M47.5 51c-.396 0-.78-.158-1.06-.44l-4-4 2.122-2.122 2.778 2.778L52.3 40.6l2.398 1.8-6 8a1.491 1.491 0 01-1.198.6z" fill="#fff"></path></symbol><symbol id="icon-slider-active"><circle cx="4" cy="4" r="4" fill="#2A6CEA"></circle></symbol><symbol id="icon-slider"><circle cx="4" cy="4" r="4"></circle></symbol><symbol id="icon-truck"><path d="M69.808 40.71c-7.564-11.582-6.76-23.454-10.406-29.036-3.646-5.582-14.512-15.206-40.186 1.564s-19.144 35-15.132 41.138C22.86 83.12 83.206 61.222 69.808 40.71z" fill="#ECEFF2"></path><path d="M61.911 42.033l1.415-1.415 2.828 2.829-1.414 1.414-2.828-2.828zm-8.131-8.13l1.414-1.414 2.829 2.828-1.414 1.414-2.829-2.828zm8.489 1.424l2.828-2.828 1.414 1.414-2.828 2.828-1.414-1.414zM37.98 66.16c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0-4a1 1 0 100 2.001 1 1 0 000-2z" fill="#C2C8CD"></path><path d="M39.06 33.5H16.5v21h29v-21h-6.44z" fill="#F3F3F1"></path><path d="M50.5 40.6h-5v13.9h13v-5.9a8 8 0 00-8-8z" fill="#2A6CEA"></path><path d="M27 58.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm24 0a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" fill="#F3F3F1"></path><path d="M25 36.5c6.351 0 11.5-5.149 11.5-11.5S31.351 13.5 25 13.5 13.5 18.649 13.5 25 18.649 36.5 25 36.5z" fill="#2A6CEA"></path><path d="M21 36h-5v19h5V36z" fill="#E1E6EA"></path><path d="M45.5 40.6v13.9H50V40.6h-4.5z" fill="#191C1F" fill-opacity=".1"></path><path d="M28 55c0-1.072.492-2.018 1.25-2.66A3.47 3.47 0 0027 51.5a3.501 3.501 0 00-3.5 3.5c0 1.932 1.568 3.5 3.5 3.5a3.47 3.47 0 002.25-.84A3.476 3.476 0 0128 55zm24 0c0-1.072.492-2.018 1.25-2.66A3.47 3.47 0 0051 51.5a3.501 3.501 0 00-3.5 3.5c0 1.932 1.569 3.5 3.5 3.5a3.47 3.47 0 002.25-.84A3.476 3.476 0 0152 55z" fill="#D5DBE1"></path><path d="M18 25c0-5.58 3.976-10.23 9.25-11.276A11.431 11.431 0 0025 13.5c-6.352 0-11.5 5.148-11.5 11.5S18.648 36.5 25 36.5c.77 0 1.522-.078 2.25-.224C21.976 35.23 18 30.58 18 25z" fill="#191C1F" fill-opacity=".1"></path><path d="M25 30.5c-.384 0-.768-.146-1.06-.44l-6-6 2.122-2.122 4.94 4.94 4.94-4.94 2.122 2.122-6 6c-.296.294-.68.44-1.064.44z" fill="#fff"></path><path d="M25 56h-8.5a1.5 1.5 0 01-1.5-1.5V38.78h3V53h7v3zm20.5 0H28.96v-3H44V35h-5.22v-3h6.72a1.5 1.5 0 011.5 1.5v21a1.5 1.5 0 01-1.5 1.5z" fill="#191C1F"></path><path d="M58.5 56h-5.542v-3H57v-4.4c0-3.584-2.916-6.5-6.5-6.5H47V53h2v3h-3.5a1.5 1.5 0 01-1.5-1.5V40.6a1.5 1.5 0 011.5-1.5h5c5.238 0 9.5 4.262 9.5 9.5v5.9a1.5 1.5 0 01-1.5 1.5zM27 60c-2.756 0-5-2.244-5-5s2.244-5 5-5 5 2.244 5 5-2.244 5-5 5zm0-7c-1.102 0-2 .898-2 2 0 1.102.898 2 2 2 1.102 0 2-.898 2-2 0-1.102-.898-2-2-2z" fill="#191C1F"></path><path d="M51 60c-2.755 0-5-2.244-5-5s2.245-5 5-5c2.757 0 5 2.244 5 5s-2.243 5-5 5zm0-7c-1.101 0-2 .898-2 2 0 1.102.899 2 2 2 1.103 0 2-.898 2-2 0-1.102-.897-2-2-2z" fill="#191C1F"></path></symbol></svg>
+  </div>
+  <div class="intro">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <svg width="120" height="24" viewBox="0 0 120 24">
+            <use href="#icon-logo" fill="white"></use>
+          </svg>
+        </div>
+        <button class="nav__button nav__button--closed">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-menu main-menu--closed">
+          <li class="main-menu__item">
+            <a href="#description" class="main-menu__link">
+              Как это работает
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none">
+                <use href="#icon-nav-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#third" class="main-menu__link">3-й блок
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none">
+                <use href="#icon-nav-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#review" class="main-menu__link">Вопросы и ответы
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none">
+                <use href="#icon-nav-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Форма
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none">
+                <use href="#icon-nav-arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="intro-section">
+      <div class="intro-section__block">
+        <h1 class="visually-hidden">Интернет-агенство "Лаборатория Интернет"</h1>
+        <h2 class="intro-section__title">Говорят, никогда не поздно сменить профессию</h2>
+        <p class="intro-section__content">Сделай круто тестовое задание и у тебя получится</p>
+        <button type="button" class="intro-section__button">Проще простого!</button>
+      </div>
+    </section>
+  </div>
+  <main>
+    <section class="description-section" id="description">
+      <h2 class="description-section__title">Как это работает</h2>
+      <ul class="description-list">
+        <li class="description-list__item description-item">
+          <h3 class="description-item__title">Прочитай задание внимательно</h3>
+          <p class="description-item__content">Думаю у тебя не займет это больше двух-трех минут</p>
+        </li>
+        <li class="description-list__item description-item">
+          <h3 class="description-item__title">Изучи весь макет заранее</h3>
+          <p class="description-item__content">Подумай как это будет работать на разных разрешениях и при скролле</p>
+        </li>
+        <li class="description-list__item description-item">
+          <h3 class="description-item__title">Сделай хорошо</h3>
+          <p class="description-item__content">Чтобы мы могли тебе доверить подобные задачи в будущем</p>
+        </li>
+        <li class="description-list__item description-item">
+          <h3 class="description-item__title">Получи предложение</h3>
+          <p class="description-item__content">Ну тут все просто, не я придумал правила, но думаю так и будет)))</p>
+        </li>
+      </ul>
+    </section>
+    <section class="third-block" id="third">
+      <div class="third-block__text">
+        <h2 class="third-block__title">Круто, ты дошел до третьего блока</h2>
+        <p class="third-block__content">63% опрошенных пользовались кредитами из-за того, что не могли покрыть
+          непредвиденные расходы свыше 15 000 ₽.
+        </p>
+        <p class="third-block__content">Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги
+          на процентах и штрафах.</p>
+      </div>
+      <div class="third-block__image">
+        <picture>
+          <source type="image/webp" srcset="img/desktop-third-block-image.webp 1x, img/desktop-third-block-image@2x.webp 2x">
+          <img src="img/desktop-third-block-image.png" srcset="img/desktop-third-block-image@2x.png 2x" alt="иллюстрация доступа к заработку через приложение" width="592" height="448">
+        </picture>
+
+      </div>
+    </section>
+    <section class="review-section" id="review">
+      <h2 class="review-section__title">Отзывы</h2>
+      <button type="button" class="review-section__button review-section__button--left">
+        <svg width="32" height="32" viewBox="0 0 32 32" class="review-section__svg">
+          <use href="#icon-arrow-left" fill="none"></use>
+        </svg>
+      </button>
+      <div class="review-section__wrapper">
+
+        <ul class="review-list">
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-empty-photo.webp 1x, img/user-empty-photo@2x.webp 2x">
+                  <img src="img/user-empty-photo.jpg" srcset="img/user-empty-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+
+                <h3 class="review-item__title">Константинов Михаил Павлович</h3>
+                <span class="review-item__city">Санкт-Петербург</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-first-photo.webp 1x, img/user-first-photo@2x.webp 2x">
+                  <img src="img/user-first-photo.jpg" srcset="img/user-first-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Иван Иванов</h3>
+                <span class="review-item__city">Санкт-Петербург</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения. В своём стремлении улучшить пользовательский опыт мы
+                упускаем,
+                что активно развивающиеся страны третьего мира призваны к ответу.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.LOrem Ipsum</p>
+            </a>
+          </li>
+          <li class="review-list__item review-item">
+            <a href="#" class="review-item__link">
+              <div class="review-item__top-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/user-second-photo.webp 1x, img/user-second-photo@2x.webp 2x">
+                  <img src="img/user-second-photo.jpg" srcset="img/user-second-photo@2x.jpg 2x" alt="Фото пользователя" width="44" height="44">
+                </picture>
+                <h3 class="review-item__title">Артем Корнилов</h3>
+                <span class="review-item__city">Самара</span>
+              </div>
+              <p class="review-item__content">Каждый из нас понимает очевидную вещь: перспективное планирование
+                предоставляет широкие возможности для
+                анализа существующих паттернов поведения.LOrem Ipsum</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="review-section__button review-section__button--right">
+        <svg width="32" height="32" viewBox="0 0 32 32" class="review-section__svg">
+          <use href="#icon-arrow-right" fill="none"></use>
+        </svg>
+      </button>
+      <ul class="slider-crumbs">
+        <li class="slider-crumbs__item">
+          <button type="button">
+            <svg width="8" height="8" viewBox="0 0 8 8" class="slider-crumbs__svg">
+              <use href="#icon-slider" fill="none"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="slider-crumbs__item">
+          <button type="button">
+            <svg width="8" height="8" viewBox="0 0 8 8" class="slider-crumbs__svg">
+              <use href="#icon-slider" fill="none"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="slider-crumbs__item">
+          <button type="button">
+            <svg width="8" height="8" viewBox="0 0 8 8" class="slider-crumbs__svg">
+              <use href="#icon-slider" fill="none"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="slider-crumbs__item">
+          <button type="button">
+            <svg width="8" height="8" viewBox="0 0 8 8" class="slider-crumbs__svg">
+              <use href="#icon-slider" fill="none"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="slider-crumbs__item">
+          <button type="button">
+            <svg width="8" height="8" viewBox="0 0 8 8" class="slider-crumbs__svg">
+              <use href="#icon-slider" fill="none"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="footer__title">
+      <a href="https://internetlab.ru/">© 2021 Лаборатория интернет</a>
+    </h2>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
