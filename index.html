@@ -19,49 +19,49 @@
         <ul class="content__list site-list swiper-wrapper">
             <li class="site-list__item swiper-slide">
                 <a href="https://everydayhoroscopes.com/landing/aura-colors-meaning" target="_blank">
-                    <img src="img/edh.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/edh.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Everyday Horoscopes (постоянная поддержка функционала сайта + верстка лендингов)</span>
                 </a>
             </li>
             <li class="site-list__item swiper-slide">
                 <a href="https://digitalproducts.am/" target="_blank">
-                    <img src="img/digital-products.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/digital-products.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Digital Products</span>
                 </a>
             </li>
             <li class="site-list__item swiper-slide">
                 <a href="https://daily-horoscope.us/landing/aura-palm-oracle/" target="_blank">
-                    <img src="img/dh.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/dh.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Daily Horoscope (постоянная поддержка функционала сайта + верстка лендингов)</span>
                 </a>
             </li>
             <li class="site-list__item swiper-slide">
                 <a href="https://eviltrap.com/lp/bibly-quiz" target="_blank">
-                    <img src="img/evil.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/evil.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Bibly quiz - лендинг - квиз, взааимодействие с бекендом от отрисовки вопросов до финального результата</span>
                 </a>
             </li>  
             <li class="site-list__item swiper-slide">     
                 <a href="bikes/index.html" target="_blank">
-                    <img src="img/bikes.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/bikes.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Сайт велосипедов Moon - (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
                 </a>
             </li>
             <li class="site-list__item swiper-slide">
                 <a href="build2/index.html" target="_blank">
-                    <img src="img/cat-energy.jpg" width="580" height="340" alt="Cat Energy">
+                    <img class="site-list__item-img" src="img/cat-energy.jpg" width="580" height="340" alt="Cat Energy">
                     <span>Сайт Cat Energy (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
                 </a>
             </li>
             <li class="site-list__item swiper-slide">
                 <a href="alef_build/index.html" target="_blank">
-                    <img src="img/alef.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/alef.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Alef_test (использование БЭМ, препроцессора Sass, адаптивная верстка с использованием получения данных из json-файла и отрисовки товара с помощью JS))</span>
                 </a>
             </li>        
             <li class="site-list__item swiper-slide">
                 <a href="dist/index.html" target="_blank">
-                    <img src="img/vue.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <img class="site-list__item-img" src="img/vue.jpg" width="580" height="340" alt="Велосипеды Moon">
                     <span>Разные страницы, сделанные на фреймворке Vue.js</span>                    
                 </a>
             </li>     
@@ -71,10 +71,48 @@
             <li class="site-list__item"><a href="regium/index.html">Regium__test</a></li>
             <li class="site-list__item"><a href="regium__mail/email.html">Regium__mail</a></li> -->
         </ul>
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+    <div class="bottom-block">
+        <section class="contacts">
+            <h2 class="contacts__title">Связь со мной</h2>
+            <ul class="contacts__list">
+                <li class="contacts-item">
+                    <a href="https://vk.com/faddrummer">
+                        <img src="img/vk-icon.svg" width="40" height="40" alt="https://vk.com/faddrummer">
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a href="tel:+79376524121">
+                        <img src="img/phone-icon.svg" width="40" height="40" alt="+79376524121">
+                    </a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:homyak91@inbox.ru">
+                        <img src="img/email-icon.svg" width="40" height="40" alt="homyak91@inbox.ru">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="fun js-step-1">
+            <h2 class="fun__title">Вам понравилось портфолио? Поделитесь мнением!</h2>
+            <div class="checkboxes">
+                <div class="checkbox js-checkbox-yes">
+                    <div class="checkbox__img js-img-yes"></div>
+                    <div class="checkbox__text">ДА!</div>
+                </div>
+                <div class="checkbox js-checkbox-no">
+                    <div class="checkbox__img js-img-no"></div>
+                    <div class="checkbox__text">Нет!</div>
+                </div>
+            </div>            
+        </section>
+        <section class="fun js-step-2 hide">
+            <h2 class="fun__title">Спасибо!</h2>
+        </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>

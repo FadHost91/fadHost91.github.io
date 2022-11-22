@@ -70,10 +70,8 @@ img {
 .swiper {
     width: 630px;
     height: 100%;
-}
-
-.swiper-pagination {
-    bottom: 30px !important;
+    padding-bottom: 30px !important;
+    margin-bottom: 30px !important;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -92,6 +90,63 @@ img {
 
 .swiper-pagination-bullet-active {
     background: white !important;
+}
+
+.contacts__title,
+.fun__title {
+    margin: 0 0 25px 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.contacts__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-item a {
+    width: 40px;
+    height: 40px;
+    display: block
+}
+
+.bottom-block {
+    display: flex;
+    justify-content: center;
+    column-gap: 190px;
+}
+
+.checkbox {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checked {
+    background-color: teal;
+}
+
+.checkboxes {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.checkbox__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+}
+
+.hide {
+    display: none;
 }
 
 @keyframes border {
@@ -117,9 +172,18 @@ img {
         width: 450px;
     }
 
-    img {
+    .site-list__item-img {
         height: 300px;
         object-fit: cover;
+    }
+
+    .bottom-block {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 45% !important;
     }
 }
 
