@@ -4,23 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Портфолио сайтов</title>
 </head>
 <body class="content">
     <h1 class="content__title">Страница-портфолио</h1>
     <hr>
     <p class="content__text">Всем привет! По ссылкам ниже вы можете перейти на сайты, сделанные мной. Со временем список будет пополняться.</p>
-    <ul class="content__list site-list">
-        <li class="site-list__item"><a href="bikes/index.html">Сайт велосипедов Moon (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</a></li>
-        <li class="site-list__item"><a href="build2/index.html">Сайт Cat Energy (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</a></li>
-        <li class="site-list__item"><a href="dist/index.html">Разные страницы, сделанные на фреймворке Vue.js</a></li>
-        <li class="site-list__item"><a href="build/index.html">Lumos_22</a></li>
-        <li class="site-list__item"><a href="alef_build/index.html">Alef_test (использование БЭМ, препроцессора Sass, адаптивная верстка с использованием получения данных из json-файла и отрисовки товара с помощью JS))</a></li>
-        <li class="site-list__item"><a href="lab_test/index.html">Lab_test</a></li>
-        <li class="site-list__item"><a href="m1/index.html">M1-shop__test</a></li>
-        <li class="site-list__item"><a href="regium/index.html">Regium__test</a></li>
-        <li class="site-list__item"><a href="regium__mail/email.html">Regium__mail</a></li>
-    </ul>
+    <div class="swiper">
+        <ul class="content__list site-list swiper-wrapper">
+            <li class="site-list__item swiper-slide">
+                <a href="https://everydayhoroscopes.com/landing/aura-colors-meaning" target="_blank">
+                    <img src="img/edh.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Everyday Horoscopes (постоянная поддержка функционала сайта + верстка лендингов)</span>
+                </a>
+            </li>
+            <li class="site-list__item swiper-slide">
+                <a href="https://digitalproducts.am/" target="_blank">
+                    <img src="img/digital-products.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Digital Products</span>
+                </a>
+            </li>
+            <li class="site-list__item swiper-slide">
+                <a href="https://daily-horoscope.us/landing/aura-palm-oracle/" target="_blank">
+                    <img src="img/dh.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Daily Horoscope (постоянная поддержка функционала сайта + верстка лендингов)</span>
+                </a>
+            </li>
+            <li class="site-list__item swiper-slide">
+                <a href="https://eviltrap.com/lp/bibly-quiz" target="_blank">
+                    <img src="img/evil.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Bibly quiz - лендинг - квиз, взааимодействие с бекендом от отрисовки вопросов до финального результата</span>
+                </a>
+            </li>  
+            <li class="site-list__item swiper-slide">     
+                <a href="bikes/index.html" target="_blank">
+                    <img src="img/bikes.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Сайт велосипедов Moon - (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
+                </a>
+            </li>
+            <li class="site-list__item swiper-slide">
+                <a href="build2/index.html" target="_blank">
+                    <img src="img/cat-energy.jpg" width="580" height="340" alt="Cat Energy">
+                    <span>Сайт Cat Energy (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
+                </a>
+            </li>
+            <li class="site-list__item swiper-slide">
+                <a href="alef_build/index.html" target="_blank">
+                    <img src="img/alef.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Alef_test (использование БЭМ, препроцессора Sass, адаптивная верстка с использованием получения данных из json-файла и отрисовки товара с помощью JS))</span>
+                </a>
+            </li>        
+            <li class="site-list__item swiper-slide">
+                <a href="dist/index.html" target="_blank">
+                    <img src="img/vue.jpg" width="580" height="340" alt="Велосипеды Moon">
+                    <span>Разные страницы, сделанные на фреймворке Vue.js</span>                    
+                </a>
+            </li>     
+            <!-- <li class="site-list__item"><a href="build/index.html">Lumos_22</a></li>
+            <li class="site-list__item"><a href="lab_test/index.html">Lab_test</a></li>
+            <li class="site-list__item"><a href="m1/index.html">M1-shop__test</a></li>
+            <li class="site-list__item"><a href="regium/index.html">Regium__test</a></li>
+            <li class="site-list__item"><a href="regium__mail/email.html">Regium__mail</a></li> -->
+        </ul>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
