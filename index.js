@@ -63,9 +63,8 @@ document.addEventListener('DOMContentLoaded' , () => {
         // Optional parameters
         direction: 'horizontal',
         slidesPerView: 1,
-        loop: true,
-        spaceBetween: 50,
-        freeMode: true,
+        centeredSlides: true,
+        spaceBetween: 20,
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',

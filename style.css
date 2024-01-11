@@ -217,12 +217,12 @@ img {
 
 .swiper-button-next, .swiper-button-prev {
     top: 50% !important;
-    right: 25% !important;
+    right: 10% !important;
     color: white !important;
 }
 
 .swiper-button-prev {
-    left: 25% !important;
+    left: 10% !important;
 }
 
 .swiper-pagination-bullet {
