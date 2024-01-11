@@ -6,92 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <title>Портфолио сайтов</title>
+    <title>My Portfolio</title>
 </head>
 <body class="content">
-    <h1 class="content__title">Страница-портфолио</h1>
-    <hr>
-    <p class="content__text">Всем привет! По ссылкам ниже вы можете перейти на сайты, сделанные мной. Со временем список будет пополняться.</p>
-    <div class="swiper">
-        <ul class="content__list site-list swiper-wrapper">
-            <li class="site-list__item swiper-slide">
-                <a href="https://everydayhoroscopes.com/landing/aura-colors-meaning" target="_blank">
-                    <img class="site-list__item-img" src="img/edh.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Everyday Horoscopes (постоянная поддержка функционала сайта + верстка лендингов)</span>
-                </a>
-            </li>
-            <li class="site-list__item swiper-slide">
-                <a href="https://digitalproducts.am/" target="_blank">
-                    <img class="site-list__item-img" src="img/digital-products.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Digital Products</span>
-                </a>
-            </li>
-            <li class="site-list__item swiper-slide">
-                <a href="https://daily-horoscope.us/landing/aura-palm-oracle/" target="_blank">
-                    <img class="site-list__item-img" src="img/dh.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Daily Horoscope (постоянная поддержка функционала сайта + верстка лендингов)</span>
-                </a>
-            </li>
-            <li class="site-list__item swiper-slide">
-                <a href="https://eviltrap.com/lp/bibly-quiz" target="_blank">
-                    <img class="site-list__item-img" src="img/evil.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Bibly quiz - лендинг - квиз, взааимодействие с бекендом от отрисовки вопросов до финального результата</span>
-                </a>
-            </li>  
-            <li class="site-list__item swiper-slide">     
-                <a href="bikes/index.html" target="_blank">
-                    <img class="site-list__item-img" src="img/bikes.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Сайт велосипедов Moon - (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
-                </a>
-            </li>
-            <li class="site-list__item swiper-slide">
-                <a href="build2/index.html" target="_blank">
-                    <img class="site-list__item-img" src="img/cat-energy.jpg" width="580" height="340" alt="Cat Energy">
-                    <span>Сайт Cat Energy (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
-                </a>
-            </li>
-            <li class="site-list__item swiper-slide">
-                <a href="alef_build/index.html" target="_blank">
-                    <img class="site-list__item-img" src="img/alef.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Alef_test (использование БЭМ, препроцессора Sass, адаптивная верстка с использованием получения данных из json-файла и отрисовки товара с помощью JS))</span>
-                </a>
-            </li>        
-            <li class="site-list__item swiper-slide">
-                <a href="dist/index.html" target="_blank">
-                    <img class="site-list__item-img" src="img/vue.jpg" width="580" height="340" alt="Велосипеды Moon">
-                    <span>Разные страницы, сделанные на фреймворке Vue.js</span>                    
-                </a>
-            </li>     
-            <!-- <li class="site-list__item"><a href="build/index.html">Lumos_22</a></li>
-            <li class="site-list__item"><a href="lab_test/index.html">Lab_test</a></li>
-            <li class="site-list__item"><a href="m1/index.html">M1-shop__test</a></li>
-            <li class="site-list__item"><a href="regium/index.html">Regium__test</a></li>
-            <li class="site-list__item"><a href="regium__mail/email.html">Regium__mail</a></li> -->
-        </ul>
-        <div class="swiper-pagination"></div>
+    <div class="content__top top-block">
+        <div class="top-block__wrapper">
+            <header class="top-block__header header">
+                <nav class="header__nav nav">
+                    <ul class="nav__menu main-menu">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#about">О себе</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#skills">Что я могу, умею, практикую</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#portfolio">Мои работы</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="top-block__content">
+                <h1 class="top-block__title">Welcome</h1>
+                <p class="top-block__text">Всем привет! Меня зовут Антон Куклин, и я алко..., нет, я Frontend-Разработчик. Сразу скажу - дизайнер из меня 
+                    так себе, поэтому страница выглядит не так красиво, как хотелось бы) Кликнув на кнопку ниже, вы можете узнать немного обо мне.
+                </p>
+                <a href="#about" class="top-block__link">Перейти</a>
+            </div>
+        </div>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <section class="about-section element-animation js-element-animation" id="about">
+        <div class="about-section__wrapper">
+            <h2 class="about-section__title">Расскажу о себе:</h2>
+            <p class="about-section__content">Мне 32 года, живу в г. Самара, frontend-разработкой начал заниматься в 2020 году. Окончил курсы, после них начал заниматься самообучением, и параллельно искать работу. 
+                На данный момент имею опыт работы более 2х лет. Помимо основной работы занимаюсь музыкой 
+                (играю на ударных инструментах более 15 лет, но мечта стать рок-звездой так и не осуществилась, поэтому решил попробовать себя во фронтенде). В сфере разработки стараюсь постоянно развиваться, смотреть различные туториалы, узнавать что-то новое. 
+                Как работник я усидчив, мне не страшна рутинная работа (кто понимает в обучении на музыкальных инструментах, знает, что это нудно, сложно, и долго - мне такое не страшно), в рабочих задачах не боюсь лишний раз переспросить, согласовать этапы, и обсудить непонятные мне моменты. 
+            </p>
+        </div>
+    </section>
+    <section class="skills-section" id="skills">
+        <div class="skills-section__wrapper">
+            <h2 class="skills-section__title">Что я умею, какими навыками обладаю:</h2>
+            <ul class="skills-section__list skills-list element-animation js-element-animation js-skills-list">
+                <li class="skills-list__item skill">
+                    <picture>
+                        <source srcset="img/first-skill.webp"></source>
+                        <source srcset="img/first-skill.jpg"></source>
+                        <img class="skill__img" width="406" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="skill__title">HTML, CSS, JS</h3>
+                    <p class="skill__text">Тут все понятно, основы основ, без их понимания никуда. Верстка, препроцессор SASS, использование различных JS-библиотек 
+                        (свайпер, валидация, "маска" на поле ввода телефона, календари, и остальное, что упрощает жизнь), работа с CSS-библиотеками (Tailwind, Bootstrap)
+                        В JS реализовывал получение данных с бекенда с помощью fetch, обработку ответа, мини-игру c drag`n`drop (Собери слово)
+                        и другой функционал.
+                    </p>
+                </li>
+                <li class="skills-list__item skill">
+                    <picture>
+                        <source srcset="img/second-skill.webp"></source>
+                        <source srcset="img/second-skill.jpg"></source>
+                        <img class="skill__img" width="406" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="skill__title">TWIG</h3>
+                    <p class="skill__text">Шаблонизатор TWIG - С ним работаю более 2х лет, на работе в компании использовалась связка с TWIG.
+                        Верстка по макету, различный функционал на страницах (отрисовка данных с бекенда, работа с массивами, использование cookie, localStorage), 
+                        так же работа с Google Captcha, Google Sign In, различными рекламами, utm-метками, оптимизацией сайтов. 
+                    </p>
+                </li>
+                <li class="skills-list__item skill">
+                    <picture>
+                        <source srcset="img/third-skill.webp"></source>
+                        <source srcset="img/third-skill.jpg"></source>
+                        <img class="skill__img" width="406" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="skill__title">VUE.JS, Vuetify, Vuelidate</h3>
+                    <p class="skill__text">Имею небольшой опыт коммерческой работы (разработка сервиса - "хранилища" текстовых карт), а так же пет-проекты. 
+                        В мою работу входило создание с "нуля", использование vuetify-компонентов, сортировка, фильтрация, получение, редактирование, 
+                        удаление данных с бекенда с помощью AXIOS.
+                        Есть большое желание развиваться во VUE и работать с ним.</p>
+                </li>
+                <li class="skills-list__item skill">
+                    <picture>
+                        <source srcset="img/fourth-skill.webp"></source>
+                        <source srcset="img/fourth-skill.jpg"></source>
+                        <img class="skill__img" width="406" height="200" loading="lazy">
+                    </picture>
+                    <h3 class="skill__title">ANGULAR, TypeScript</h3>
+                    <p class="skill__text">Занимался поддержкой и разработкой различных компонентов для стартапа - обучающей платформы, 
+                        в мои обязанности входила разработка отдельных компонентов, которые предусматривали валидацию, 
+                        выбор различных опции и реактивная отрисовка изменения состояния, работа со store, верстка по макету. Опыта мало, но основное понимание создания компонентов,
+                        подключения модулей, жизненных циклов, запросов на бек есть. Так же в Angular используется TypeScript, поэтому базовое понимание строго типизированного JS тоже присутствует.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="sites-section">
+        <h2 class="sites-section__title">Мои работы:</h2>
+        <div class="swiper">
+            <ul class="content__list site-list swiper-wrapper">
+                <li class="site-list__item swiper-slide">
+                    <a href="https://everydayhoroscopes.com/landing/aura-colors-meaning" target="_blank">
+                        <img class="site-list__item-img" src="img/edh.jpg" width="580" height="340" alt="Everyday Horoscopes">
+                        <span>Everyday Horoscopes (постоянная поддержка функционала сайта + верстка лендингов)</span>
+                    </a>
+                </li>
+                <li class="site-list__item swiper-slide">
+                    <a href="https://digitalproducts.am/" target="_blank">
+                        <img class="site-list__item-img" src="img/digital-products.jpg" width="580" height="340" alt="Digital Products">
+                        <span>Digital Products</span>
+                    </a>
+                </li>
+                <li class="site-list__item swiper-slide">
+                    <a href="https://daily-horoscope.us/landing/aura-palm-oracle/" target="_blank">
+                        <img class="site-list__item-img" src="img/dh.jpg" width="580" height="340" alt="Daily Horoscope">
+                        <span>Daily Horoscope (постоянная поддержка функционала сайта + верстка лендингов)</span>
+                    </a>
+                </li>
+                <li class="site-list__item swiper-slide">
+                    <a href="https://eviltrap.com/lp/bibly-quiz" target="_blank">
+                        <img class="site-list__item-img" src="img/evil.jpg" width="580" height="340" alt="Bibly quiz">
+                        <span>Bibly quiz - лендинг - квиз, взааимодействие с бекендом от отрисовки вопросов до финального результата</span>
+                    </a>
+                </li>  
+                <li class="site-list__item swiper-slide">     
+                    <a href="bikes/index.html" target="_blank">
+                        <img class="site-list__item-img" src="img/bikes.jpg" width="580" height="340" alt="Велосипеды Moon">
+                        <span>Сайт велосипедов Moon - (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
+                    </a>
+                </li>
+
+                <li class="site-list__item swiper-slide">
+                    <a href="alef_build/index.html" target="_blank">
+                        <img class="site-list__item-img" src="img/alef.jpg" width="580" height="340" alt="Alef_test">
+                        <span>Alef_test (использование БЭМ, препроцессора Sass, адаптивная верстка с использованием получения данных из json-файла и отрисовки товара с помощью JS)</span>
+                    </a>
+                </li>        
+                <li class="site-list__item swiper-slide">
+                    <a href="dist/index.html" target="_blank">
+                        <img class="site-list__item-img" src="img/third-skill.jpg" width="580" height="340" alt="Todo-List">
+                        <span>Todo-List, сделанный во время обучения Vue.js</span>                    
+                    </a>
+                </li>
+                <li class="site-list__item swiper-slide">
+                    <a href="dist2/index.html" target="_blank">
+                        <img class="site-list__item-img" src="img/third-skill.jpg" width="580" height="340" alt="Сайт-кинотеатр">
+                        <span>Сайт-кинотеатр, сделанный во время обучения Vue.js</span>                    
+                    </a>
+                </li>         
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
     <div class="bottom-block">
         <section class="contacts">
             <h2 class="contacts__title">Связь со мной</h2>
             <ul class="contacts__list">
                 <li class="contacts-item">
                     <a href="https://vk.com/faddrummer">
-                        <img src="img/vk-icon.svg" width="40" height="40" alt="https://vk.com/faddrummer">
+                        <img src="img/vk-icon.svg" width="50" height="50" alt="https://vk.com/faddrummer">
                     </a>
                 </li>
                 <li class="contacts-item">
                     <a href="tel:+79376524121">
-                        <img src="img/phone-icon.svg" width="40" height="40" alt="+79376524121">
+                        <img src="img/phone-icon.png" width="50" height="50" alt="+79376524121">
                     </a>
                 </li>
                 <li class="contacts-item">
                     <a href="mailto:homyak91@inbox.ru">
-                        <img src="img/email-icon.svg" width="40" height="40" alt="homyak91@inbox.ru">
+                        <img src="img/mail-icon.png" width="50" height="50" alt="homyak91@inbox.ru">
                     </a>
                 </li>
             </ul>

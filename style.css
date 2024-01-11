@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
 
 img {
     max-width: 100%;
@@ -9,30 +16,165 @@ img {
 }
 
 .content {
-    max-width: 1200px;
-    margin: 50px auto;
-    width: 95%;
-    padding: 0 0 50px 0;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    background-color:#1b1b1b;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#2f2f2f;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    /* border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px #4c4a4a78; */
+}
+
+.top-block {
+    background: url('/img/content-top-bg.jpg') no-repeat center / cover;
+    background: -webkit-image-set(url('/img/content-top-bg.webp')) no-repeat center / cover;
+    background: image-set(url('/img/content-top-bg.webp') type("image/webp")) no-repeat center / cover;
+    position: relative;
+    padding-bottom: 50px;
+    height: 100vh;
+
+}
+
+.top-block,
+.about-section,
+.sites-section,
+.skills-section {
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+
+.top-block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.header,
+.nav,
+.top-block__content {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+    margin: 0 0 50px 0;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+
+.nav,
+.top-block__content {
+    max-width: 1200px;
+    width: 95%;
+}
+
+.nav {
+    margin: 0 auto;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main-menu__item {
+    font-size: 22px;
+}
+
+.main-menu__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top-block__content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.top-block__title {
+    color: #ffffff;
+    font-size: 60px;
+    margin: 0;
+}
+
+.top-block__text {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0;
+}
+
+.top-block__link {
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 0px 12px 4px #4c4a4a78;
+    padding: 15px 40px;
+    font-size: 20px;
+    display: flex;
+    background: linear-gradient(90deg, #0114be, #770281, #006906);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+    transition: transform .5s ease;
 }
 
-
-
-.content__title {
-    color: #ffffff;
-    font-size: 36px;
-    text-shadow: 0 0 8px #fce76f; 
+.top-block__link:hover {
+    transform: scale(1.05);
 }
 
-.content__text {
-    color: #ffffff;
-    margin: 50px 0 50px 0;
+.element-animation {
+    opacity: 0;
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: opacity 2s; 
+}
+
+.about-section__wrapper,
+.skills-section__wrapper {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.about-section__title,
+.skills-section__title,
+.sites-section__title {
+    font-size: 40px;
+    margin: 0 0 50px; 
+}
+
+.sites-section {
+    padding: 50px 0;
+    position: relative;
+}
+
+.about-section__content {
+    font-size: 24px;
 }
 
 .site-list {
@@ -47,7 +189,7 @@ img {
     width: 630px;
     padding: 20px;
     min-height: 450px;
-    animation: border 3s linear infinite;
+    animation: border 5s linear infinite forwards;
     border-radius: 20px;
 
 }
@@ -71,17 +213,16 @@ img {
     width: 630px;
     height: 100%;
     padding-bottom: 30px !important;
-    margin-bottom: 30px !important;
 }
 
 .swiper-button-next, .swiper-button-prev {
-    top: 60% !important;
-    right: 50px !important;
+    top: 50% !important;
+    right: 25% !important;
     color: white !important;
 }
 
 .swiper-button-prev {
-    left: 50px !important;
+    left: 25% !important;
 }
 
 .swiper-pagination-bullet {
@@ -90,6 +231,46 @@ img {
 
 .swiper-pagination-bullet-active {
     background: white !important;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.skill {
+    padding: 20px;
+    width: 450px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.skill__img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+.skill.appear {
+    animation: skillsAppear 1s ease forwards;
+}
+
+.skill:nth-child(2).appear {
+    animation-delay: .5s;
+}
+
+.skill:nth-child(3).appear {
+    animation-delay: 1s;
+}
+
+.skill:last-child.appear {
+    animation-delay: 1.5s;
 }
 
 .contacts__title,
@@ -111,13 +292,20 @@ img {
 .contacts-item a {
     width: 40px;
     height: 40px;
-    display: block
+    display: flex;
+    align-items: center;
 }
 
 .bottom-block {
     display: flex;
     justify-content: center;
-    column-gap: 190px;
+    gap: 35px;
+    flex-direction: column;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    width: 95%;
+
 }
 
 .checkbox {
@@ -149,18 +337,40 @@ img {
     display: none;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes skillsAppear {
+    from {
+        transform: translateX(2000px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @keyframes border {
     0% {
-        border: 1px solid rgba(255,255,255, 0);
-    } 25% {
-        border: 1px solid rgba(255, 255, 255, 0.5);
-    } 50% {
-        border: 1px solid rgb(246, 250, 0);
-    } 75% {
-        border: 1px solid rgba(123, 255, 0, 0.5);
+        border: 1px solid rgba(255,255,255, 1);
+    } 33% {
+        border: 1px solid #0114be;    
+    } 55% {
+        border: 1px solid #006906;
+    } 84% {
+        border: 1px solid #770281;
     } 100% {
-        border: 1px solid rgba(255,255,255, 0);
-    }
+        border: 1px solid rgba(255,255,255, 1);        
+    } 
 }
 
 @media screen and (max-width:880px) {

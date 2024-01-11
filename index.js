@@ -8,6 +8,35 @@ document.addEventListener('DOMContentLoaded' , () => {
   let checkboxImgNo = document.querySelector('.js-img-no');
   let flag = 0;
 
+  let elements = document.querySelectorAll('.js-element-animation');
+  let options = {
+      threshold: [0.3]
+  };
+
+  // show blocks by scroll
+  if (elements) {
+      let observer = new IntersectionObserver(onEntry, options);
+
+      function onEntry(entry) {
+          entry.forEach(change => {
+              if (change.isIntersecting) {
+                  change.target.classList.add('element-show');
+                  if (change.target.classList.contains('js-skills-list')) {
+                    let skillsList = document.querySelector('.js-skills-list');
+                    let skillsItem = skillsList.querySelectorAll('li');
+                    skillsItem.forEach(item => {
+                      item.classList.add('appear');
+                    })
+                  }
+              }
+          });
+      }
+  
+      for (let elem of elements) {
+          observer.observe(elem);
+      }
+  }
+
   checkboxYes.addEventListener('click', () => {
     checkboxImg.classList.add('checked');
     setTimeout(function() {
@@ -19,7 +48,7 @@ document.addEventListener('DOMContentLoaded' , () => {
   checkboxImgNo.addEventListener('mouseover', () => {
     flag += 1;
     if (flag % 2 === 0) {
-      checkboxImgNo.style.transform = "translateX(170%)";
+      checkboxImgNo.style.transform = "translateX(250%)";
     } else {
       checkboxImgNo.style.transform = "translateY(200%)";
     }
