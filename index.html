@@ -14,8 +14,13 @@
 <body class="content">
     <div class="content__top top-block">
         <div class="top-block__wrapper">
-            <header class="top-block__header header">
+            <header class="top-block__header header fade-out js-header">
                 <nav class="header__nav nav">
+                    <div class="header__burger burger-btn js-burger">
+                        <div class="burger-btn__line burger-btn__line--one"></div>
+                        <div class="burger-btn__line burger-btn__line--two"></div>
+                        <div class="burger-btn__line burger-btn__line--three"></div>
+                    </div>
                     <ul class="nav__menu main-menu">
                         <li class="main-menu__item">
                             <a class="main-menu__link" href="#about">О себе</a>
@@ -51,10 +56,10 @@
             </p>
         </div>
     </section>
-    <section class="skills-section" id="skills">
-        <div class="skills-section__wrapper">
+    <section class="skills-section element-animation js-element-animation" id="skills">
+        <div class="skills-section__wrapper js-skills-list element-animation js-element-animation">
             <h2 class="skills-section__title">Что я умею, какими навыками обладаю:</h2>
-            <ul class="skills-section__list skills-list element-animation js-element-animation js-skills-list">
+            <ul class="skills-section__list skills-list">
                 <li class="skills-list__item skill">
                     <picture>
                         <source srcset="img/first-skill.webp"></source>
@@ -108,7 +113,7 @@
             </ul>
         </div>
     </section>
-    <section class="sites-section">
+    <section class="sites-section" id="portfolio">
         <h2 class="sites-section__title">Мои работы:</h2>
         <div class="swiper">
             <ul class="content__list site-list swiper-wrapper">
@@ -142,14 +147,13 @@
                         <span>Сайт велосипедов Moon - (использование БЭМ, препроцессора Sass, адаптивная верстка с ретинизацией изображении)</span>
                     </a>
                 </li>
-
-                <li class="site-list__item swiper-slide">
+                <!-- <li class="site-list__item swiper-slide">
                     <a href="alef_build/index.html" target="_blank">
                         <img class="site-list__item-img" src="img/alef.jpg" width="580" height="340" alt="Alef_test">
                         <span>Alef_test (использование БЭМ, препроцессора Sass, адаптивная верстка с использованием получения данных из json-файла и отрисовки товара с помощью JS)</span>
                     </a>
-                </li>        
-                <li class="site-list__item swiper-slide">
+                </li>         -->
+                <!-- <li class="site-list__item swiper-slide">
                     <a href="dist/index.html" target="_blank">
                         <img class="site-list__item-img" src="img/third-skill.jpg" width="580" height="340" alt="Todo-List">
                         <span>Todo-List, сделанный во время обучения Vue.js</span>                    
@@ -160,7 +164,7 @@
                         <img class="site-list__item-img" src="img/third-skill.jpg" width="580" height="340" alt="Сайт-кинотеатр">
                         <span>Сайт-кинотеатр, сделанный во время обучения Vue.js</span>                    
                     </a>
-                </li>         
+                </li>          -->
             </ul>
             <div class="swiper-pagination"></div>
         </div>
@@ -168,7 +172,7 @@
         <div class="swiper-button-next"></div>
     </section>
     <div class="bottom-block">
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <h2 class="contacts__title">Связь со мной</h2>
             <ul class="contacts__list">
                 <li class="contacts-item">
@@ -198,8 +202,12 @@
                 <div class="checkbox js-checkbox-no">
                     <div class="checkbox__img js-img-no"></div>
                     <div class="checkbox__text">Нет!</div>
-                </div>
-            </div>            
+                </div> 
+            </div>          
+        </section>
+        <section class="fun js-loader-section hide">
+            <h2 class="fun__title">Подождите, идет обработка запроса</h2>
+            <div class="loader js-loader"></div> 
         </section>
         <section class="fun js-step-2 hide">
             <h2 class="fun__title">Спасибо!</h2>

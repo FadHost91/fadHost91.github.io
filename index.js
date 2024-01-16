@@ -6,12 +6,17 @@ document.addEventListener('DOMContentLoaded' , () => {
   let step2 = document.querySelector('.js-step-2');
   let checkboxImg = document.querySelector('.js-img-yes');
   let checkboxImgNo = document.querySelector('.js-img-no');
+  let burgerMenu = document.querySelector('.js-burger');
+  let header = document.querySelector('.js-header');
+  let loader = document.querySelector('.js-loader-section');
   let flag = 0;
 
   let elements = document.querySelectorAll('.js-element-animation');
   let options = {
-      threshold: [0.3]
+      threshold: [0.1]
   };
+
+  burgerMenu.addEventListener('click', showMenu);
 
   // show blocks by scroll
   if (elements) {
@@ -39,10 +44,12 @@ document.addEventListener('DOMContentLoaded' , () => {
 
   checkboxYes.addEventListener('click', () => {
     checkboxImg.classList.add('checked');
+    loader.classList.remove('hide');
+    step1.classList.add('hide');
     setTimeout(function() {
-      step1.classList.add('hide')
-      step2.classList.remove('hide')
-    }, 3000)
+      loader.classList.add('hide');
+      step2.classList.remove('hide');
+    }, 2000)
   })
 
   checkboxImgNo.addEventListener('mouseover', () => {
@@ -80,5 +87,9 @@ document.addEventListener('DOMContentLoaded' , () => {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-      });    
+      });
+
+      function showMenu() {
+        header.classList.toggle('active');
+      }
 })
